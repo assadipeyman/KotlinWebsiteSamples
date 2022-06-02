@@ -1,13 +1,10 @@
+import com.google.gson.Gson
+
 fun main(args: Array<String>) {
-    println("Application started on package ${ ClassLoader.getSystemClassLoader().name }")
+    val g: Gson = Gson();
+    val a= A("1")
+    println( g.toJson(a))
+}
 
-    val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
-
-    println(
-        fruits
-            .filter { it.startsWith("a") }
-            .sortedBy { it }
-            .map { it.uppercase() }
-            .toString()
-    )
+class A(var name:String) {
 }
