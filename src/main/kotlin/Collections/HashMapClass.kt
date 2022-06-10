@@ -4,7 +4,7 @@ fun main(){
     //below line make read only map. a is key and 1 is value
     val map = mapOf("a" to 1, "b" to 2, "c" to 3)
 
-    //map.add -> it does't have add  method
+    //map.add -> it don't have add  method
     println(map["b"])
 
     //Traverse a map or a list of pairs
