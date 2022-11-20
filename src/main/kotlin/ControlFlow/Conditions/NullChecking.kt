@@ -1,7 +1,7 @@
 import java.io.File
 fun main() {
     val files = File("test folder").listFiles()
-    println(files?.size)
+    println(files?.size?:0)
 
     println(files?.size ?: run { File("").absolutePath })// size is printed if files is not null
 

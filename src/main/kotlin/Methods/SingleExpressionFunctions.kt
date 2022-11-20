@@ -11,13 +11,11 @@ fun main(){
 
 fun theAnswer() = 42
 
-fun transformNumber(number : Int): String = when(number){
+fun transformNumber(n:Int):String = when(n){
     1->"One"
     2->"Two"
     3->"Three"
     4->"Four"
     5->"Five"
-    else -> throw java.lang.IllegalArgumentException("Nuber should be in range 1 <= .. <= 5")
-
-
+    else -> throw IllegalArgumentException("Number should  be in range 1..5")
 }

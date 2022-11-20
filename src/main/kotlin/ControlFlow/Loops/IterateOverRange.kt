@@ -11,7 +11,7 @@ fun main(){
     for (x in 2..10 step 2) {  print("$x ") }
     println()
 
-    for (x in 10 downTo 1) {  print("$x ") }
+    for (x in 10 downTo   1) {  print("$x ") }
     println()
 
     for (x in 10 downTo 1 step 2) {  print("$x ") }

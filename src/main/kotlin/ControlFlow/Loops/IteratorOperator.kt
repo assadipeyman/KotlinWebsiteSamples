@@ -13,6 +13,7 @@ fun main() {
         println(it.next().name)
     }
 
+
 }
 
 class Anim(val name:String)
